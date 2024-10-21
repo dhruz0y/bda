@@ -1,0 +1,39 @@
+mkdir hadoop
+cd hadoop/
+vi hello.txt (i ,esc wq)
+cat hello.txt
+
+
+hdfs dfs -mkdir /today
+hdfs dfs -put hello.txt /today/data.txt
+hdfs dfs -cat /today/data.txt
+
+
+hdfs dfs -mkdir /input (rmdir)
+hdfs dfs -cp /today/data.txt /input/roneet.txt
+hdfs dfs -cat /input/dhruv.txt
+
+hdfs dfs -get /input/dhruv.txt
+ls
+
+
+
+*HIVE*
+
+-> hive
+-> create database dhruv_ka_db;
+-> use dhruv_ka_db;
+
+
+(imp)
+
+-> CREATE TABLE dhruv_ke_dost (
+    name STRING,
+    age INT)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+STORED AS TEXTFILE;
+
+(/imp)
+
+select * from dhruv_ke_dost;

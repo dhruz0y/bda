@@ -1,0 +1,75 @@
+colab exps 
+
+data visulizations
+
+first-> 
+!sudo apt-get install r-base
+!pip install rpy2
+%load_ext rpy2.ipython
+
+then
+->
+
+%%R
+# Generate 100 random numbers between 1 and 50
+random_numbers <- sample(1:50, 100, replace=TRUE)
+
+# Create a simple histogram
+hist(random_numbers,
+     main="Histogram of Random Numbers",
+     xlab="Random Numbers",
+     col="yellow",
+     border="black")
+
+#PLOT X VS X^2
+%%R
+x <- 1:10
+y <- x^2
+
+plot(x,y, type = "l",col = "red", main= "Line Plot x vs x^2" , xlab = "x" , ylab = "x^2")
+
+
+#PIECHART
+%%R
+slices <- c(10,20,30,40)
+labels <- c("A","B","C","D")
+
+pie(slices,labels = labels, main = "PieChart", col = rainbow(length(slices)))
+
+
+
+FOR NORMAL R COMMANDS
+
+
+# Run R code using %%R magic
+%%R
+a <- 10
+b <- 5
+
+# Addition
+sum_result <- a + b
+cat("Sum:", sum_result, "\n")
+
+# Subtraction
+sub_result <- a - b
+cat("Subtraction:", sub_result, "\n")
+
+# Multiplication
+mul_result <- a * b
+cat("Multiplication:", mul_result, "\n")
+
+# Division
+div_result <- a / b
+cat("Division:", div_result, "\n")
+
+# Conditional
+if (a > b) {
+  cat("a is greater than b\n")
+} else {
+  cat("b is greater than or equal to a\n")
+}
+
+
+or just paste this
+https://shorturl.at/hNsKC
+
