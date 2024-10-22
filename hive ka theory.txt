@@ -1,0 +1,41 @@
+Aim:
+Theory: HIVE
+Hive is a data warehouse infrastructure tool to process structured data in Hadoop. It resides on top of Hadoop to summarize Big Data, and makes querying and analyzing easy. Initially Hive was developed by Facebook, later the Apache Software Foundation took it up and developed it further as an open source under the name Apache Hive. It is used by different companies. For example, Amazon uses it in Amazon Elastic MapReduce. Hive provides the functionality of reading, writing, and managing large datasets residing in distributed storage. It runs SQL like queries called HQL (Hive query language) which gets internally converted to MapReduce jobs. Using Hive, we can skip the requirement of the traditional
+approach of writing complex MapReduce programs. Hive supports Data Definition Language (DDL), Data
+Manipulation Language (DML), and User Defined Functions (UDF).
+
+Features of Hive
+To create Hive Database and descriptive analytics basic statistics.
+It stores schema in a database and processed data into HDFS
+It is designed for OLAP.
+It provides SQL type language for querying called HiveQL or HQL.
+It is familiar, fast, scalable, and extensible.
+
+Limitations of Hive commands:
+1. Hive doesn’t support sub queries.
+2. Hive surely supports over-writing, but unfortunately, it doesn’t support deletion and updates.
+3. Hive is not designed for OLTP, but it is used for it.
+
+Basic Hive Commands
+Limitations of Hive commands:
+1. Hive doesn’t support sub queries.
+2. Hive surely supports over-writing, but unfortunately, it doesn’t support deletion and updates.
+3. Hive is not designed for OLTP, but it is used for it.
+1. Create: This will create the new database in the Hive.
+create database database_name;
+2. Show: show command will show all the databases residing in the Hive.
+show databases;
+3. Use: The command to use the database.
+use database_name;
+4. Drop: The drop will remove a table from Hive
+drop table_name;
+5. Create table: This command creates the table.
+create table table_name (column names and types);
+6. Alter: Alter command will help you rename the table or table columns.
+alter table table_name rename to new_table_name;
+For renaming column name, replace table name with column name.
+7. Describe: Describe command will help you with the information about the schema of the
+table.
+describe table name;
+8. LOAD, INSERT: The Load operation is used to move the data into corresponding Hive table.
+LOAD data inpath into table [tablename];

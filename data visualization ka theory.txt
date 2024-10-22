@@ -1,0 +1,12 @@
+Aim: Data Visualization using R.
+Theory:
+Data visualization is the technique used to deliver insights in data using visual cues such as graphs, charts, maps, 
+and many others. This is useful as it helps in intuitive and easy understanding of the large quantities of data and 
+thereby make better decisions regarding it. The popular data visualization tools that are available are Tableau, 
+Plotly, R, Google Charts, Infogram, and Kibana. The various data visualization platforms have different capabilities, 
+functionality, and use cases. They also require a different skill set. This article discusses the use of R for data 
+visualization. R is a language that is designed for statistical computing, graphical data analysis, and scientific 
+research. It is usually preferred for data visualization as it offers flexibility and minimum required coding through its 
+packages
+
+ 

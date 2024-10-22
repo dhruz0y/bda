@@ -1,0 +1,47 @@
+Hadoop –
+Hadoop is an open-source framework based on Java that manages the storage and processing of large 
+amounts of data for applications. Hadoop uses distributed storage and parallel processing to handle big data 
+and analytics jobs, breaking workloads down into smaller workloads that can be run at the same time.
+
+Four modules comprise the primary Hadoop framework and work collectively to form the Hadoop 
+ecosystem:
+1. Hadoop Distributed File System (HDFS): As the primary component of the Hadoop ecosystem, HDFS 
+is a distributed file system in which individual Hadoop nodes operate on data that resides in their local 
+storage. This removes network latency, providing high-throughput access to application data. In addition, 
+administrators don’t need to define schemas up front.
+
+2. Yet Another Resource Negotiator (YARN): YARN is a resource-management platform responsible for 
+managing compute resources in clusters and using them to schedule users’ applications. It performs 
+scheduling and resource allocation across the Hadoop system.
+
+3. MapReduce: MapReduce is a programming model for large-scale data processing. In the MapReduce 
+model, subsets of larger datasets and instructions for processing the subsets are dispatched to multiple 
+different nodes, where each subset is processed by a node in parallel with other processing jobs. After 
+processing the results, individual subsets are combined into a smaller, more manageable dataset.
+
+4. Hadoop Common: Hadoop Common includes the libraries and utilities used and shared by other 
+Hadoop modules.
+Beyond HDFS, YARN, and MapReduce, the entire Hadoop open-source ecosystem continues to grow and 
+includes many tools and applications to help collect, store, process, analyse, and manage big data. These 
+include Apache Pig, Apache Hive, Apache HBase, Apache Spark, Presto, and Apache Zeppelin.
+
+
+Hadoop Ecosystem Tools –
+The Hadoop ecosystem comprises a suite of tools designed to handle various aspects of big data 
+management, from storage and processing to querying and analysis. It includes components like HDFS 
+for distributed storage, MapReduce for batch processing, and Hive for SQL-like querying. These tools 
+work together to enable scalable, efficient handling of large-scale data across distributed systems.
+
+1. HDFS (Hadoop Distributed File System): A distributed file system designed to store large datasets 
+across multiple machines, ensuring high fault tolerance. It splits data into blocks and replicates them 
+across nodes for reliability.
+
+2. MapReduce: A programming model for processing large data sets in parallel across a cluster. It 
+simplifies data processing by dividing tasks into 'Map' and 'Reduce' phases for efficient batch processing.
+
+3. YARN (Yet Another Resource Negotiator): Manages and allocates resources to applications running 
+on a Hadoop cluster. It allows multiple data-processing engines like MapReduce and Spark to run 
+simultaneously.
+
+4. Hive: A data warehouse system that provides SQL-like querying capabilities over large datasets stored 
+in HDFS. Hive simplifies data analysis by abstracting MapReduce with HiveQL.
